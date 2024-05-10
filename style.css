@@ -1,0 +1,177 @@
+html {
+  scroll-behavior: smooth;
+}
+.background-img{
+    height: 100vh;
+    width: 100%;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #161A1D;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: #023859;
+  }
+  
+  .topnav a.active {
+    color: #023859;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  .hero-image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("./Assets/lapbg.JPG");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+  
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .name-home{
+    font-size: 72px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding: 0;
+    margin: 0;
+  }
+
+  span{
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+  }
+
+  .des-title{
+    font-family: "Kanit", sans-serif;
+    font-weight: 10;
+    font-style: normal;
+    letter-spacing: 8px;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  .hero-text a {
+    border: 0.25px solid #D5CDCB;
+    border-radius: 10px;
+    outline: 0;
+    display: inline-block;
+    padding: 4px 25px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  }
+  
+  .hero-text a:hover {
+    background-color: black;
+  }
+  .hero-text a:hover,.hero-text a:active{
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  }
+
+@media only screen and (max-width: 920px){
+    .hero-text{
+        left: 50%;
+    }
+}
+ 
+@media only screen and (max-width: 540px){
+    .hero-text{
+        left: 50%;
+    }
+    .name-home,span{
+        font-size: 50px;
+    }
+    .des-title{
+        font-size: 30px;
+    }
+}
+
+.pickgradient {
+  display:inline-block;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+img{
+  position:relative;
+  z-index:-1;
+  display:block;
+  height:200px; width:auto;
+}
+
+.res-a:link, .res-a:visited {
+  text-decoration: none;
+  display: inline-block;
+  border: 0.25px solid #D5CDCB;
+  border-radius: 10px;
+  outline: 0;
+  display: inline-block;
+  padding: 8px 25px;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  margin-bottom: 5px;
+}
+
+.res-a:hover, .res-a:active {
+  background-color: black;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
