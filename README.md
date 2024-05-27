@@ -22,7 +22,7 @@ This website serves as a digital version of my resume, showcasing my skills, exp
 
 ## Usage
 
-To view the website, simply visit [jmresume.com]([https://www.jmresume.com](https://jm-070.github.io/jmresume/).
+To view the website, simply visit [jmresume](https://jm-070.github.io/jmresume/).
 
 To run the website locally:
 
